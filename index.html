@@ -1,0 +1,54 @@
+<html>
+    <meta charset="utf8">
+    <title>Splittergame</title>
+</html>
+<body>
+	<div id="previewContainer">
+		<div class="container" id="lifeContainer">
+			<p id="life">💗💗💗💗💗💗</p>
+		</div>
+		<div id="container">
+			<canvas width="40px" height="40px"id="preview"></canvas>
+			<p id="counter">1</p>
+		</div>
+		<div class="container" id="otherContainer">
+			<p>Zeit:</p>
+		</div>
+	</div>
+    <canvas width="600px" height="600px" id="canvas"></canvas>
+</body>
+<style>
+    canvas{
+        border: 1px solid black;
+    }
+	
+	#previewContainer {
+		width: 600px;
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	
+	.container {
+		width: 200px;
+	}
+	
+	#counter {
+		text-align: center;
+		font-size: 2em;
+		margin: 0px;
+	}
+	
+	#life {
+		color: red;
+		font-size: 1.5em;
+		margin: 0px;
+	}
+</style>
+
+<script src="quad.js"></script>
+<script src="game.js"></script>
+<script src="preview.js"></script>
+<script src="init.js"></script>
